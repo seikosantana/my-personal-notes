@@ -48,3 +48,8 @@ I've been tinkering with it, editing the service, adding restarts and no luck.
 
 ### Solution
 I'm no Linux expert. I don't know how to fix the thing related to LIBUSB errors shown in journalctl and searches point to nothing. Tried everything I got in configuring the service unit file, and I gave up trying to do that, but came with a workaround, to check the service and start it if it hasn't started. I wrote a bash shell script, general purpose, not only for pcscd but can also be used for any other services. Check out [systemd-service-keepalive](https://github.com/seikosantana/systemd-service-keepalive).
+
+Edit per Feb 5 2022
+That solution does not work on Raspberry Pi 3 on boot. Although it is starting dead pcscd service, it wasn't able to register ACR122U device. After some investigation, unplug and re-plugging-in the reader solves the problem. To simulate this action, I found `uhubctl`. `uhubctl -R -a cycle` restarts the USB power and it simulates that behaviour. FIxed!
+
+(Will add an installer script to automate this)
