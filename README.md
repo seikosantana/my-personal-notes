@@ -1,3 +1,7 @@
+/*
+ * Created by Seiko Santana
+ */
+ 
 # My Personal Notes
 These are my personal notes. It is written to help future me in the future. These notes are mainly about installation, configuration, libraries, and solutions I wrote to overcome those problems. I hope these notes will help future me when I run into the same problems I have solved or researched before since information in these documents is not so easy to find or figure out, or at least takes long time to solve, find out, or figure out.
 
@@ -9,6 +13,7 @@ Everything here is written using [NoteKit](https://github.com/blackhole89/noteki
 
 
 Best regards,
+
 
 
 Seiko Santana
